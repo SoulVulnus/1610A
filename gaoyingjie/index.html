@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数柱</title>
+    <style>
+        #btn {
+            margin-bottom: 20px;
+        }
+        
+        .jump {
+            animation: jump 0.2s ease-in-out 0s 1 alternate both;
+            width: 20px;
+            height: 20px;
+            background: pink;
+            border-radius: 5px;
+            flex: initial;
+            margin-left: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+        }
+        
+        @keyframes jump {
+            0% {
+                transform: translateY(0px)
+            }
+            50% {
+                transform: translateY(50px)
+            }
+            100% {
+                transform: translateY(0px)
+            }
+        }
+        
+        #box {
+            width: 500px;
+            height: 500px;
+            background: skyblue;
+            display: flex;
+        }
+        
+        .static {
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 5px;
+            flex: initial;
+            margin-left: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+        }
+        
+        .move {
+            width: 20px;
+            height: 20px;
+            background: pink;
+            border-radius: 5px;
+            flex: initial;
+            margin-left: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+        }
+        /* #div {
+            width: 30px;
+            height: 20px;
+            border: 1px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="btn">
+        <button>添加静态的数柱</button>
+        <button>添加会动的数柱</button>
+        <button>所有会动的数柱依次运动</button>
+        <input type="number" min="1" max="9" id="input" />
+        <!-- <input type="text" placeholder="1"> -->
+    </div>
+    <div id="box"></div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
